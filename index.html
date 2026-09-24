@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kanbanly — Premium Task Board</title>
+<meta name="description" content="Kanbanly is a premium dark glassmorphism kanban board to plan, focus and ship work beautifully. No account, no setup." />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#board" aria-label="Kanbanly home">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span class="brand-name">Kanbanly</span>
+    </a>
+    <span class="badge">Zero-setup task board</span>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Plan &middot; Focus &middot; Ship</p>
+      <h1 id="hero-title">Turn a messy <span class="grad">to-do list</span> into momentum.</h1>
+      <p class="lede">A drag-and-drop board that lives in your browser. Organize tasks, track progress, and feel the win &mdash; no account, no setup.</p>
+
+      <div class="hero-stats">
+        <div class="stat glass">
+          <span class="stat-num" id="stat-total">0</span>
+          <span class="stat-label">Tasks</span>
+        </div>
+        <div class="stat glass">
+          <span class="stat-num" id="stat-done">0</span>
+          <span class="stat-label">Completed</span>
+        </div>
+        <div class="stat glass progress-card">
+          <div class="progress-top">
+            <span class="stat-label">Progress</span>
+            <span class="stat-num" id="stat-percent">0%</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Board progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar">
+            <span class="progress-fill" id="progress-fill"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="board" id="board" aria-label="Task board"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with vanilla HTML, CSS &amp; JavaScript &middot; your data stays in this browser.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
